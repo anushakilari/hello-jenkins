@@ -11,7 +11,7 @@ pipeline {
                 sh """
                 echo $WORKSPACE
                 cd $WORKSPACE
-                tar -zcvf tarfiles.tar.gz tarfiles
+                tar -zcvf tarfiles.$(date +%F).tar.gz tarfiles
                 """
             }
         }
